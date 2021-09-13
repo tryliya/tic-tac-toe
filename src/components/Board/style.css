@@ -1,0 +1,12 @@
+.board {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 575px) {
+    .board {
+        width: 270px;
+        height: 270px;
+    }
+  }
