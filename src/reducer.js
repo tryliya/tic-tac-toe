@@ -51,16 +51,12 @@ const reducer = (state = initialState, action) => {
         }
     }
     if (action.type === ACTION_TYPES.CHANGE_GAME_TYPE) {
-        console.log(action);
-        console.log(state);
         return  {
-            ...state,
-            xIsNext: initialState.xIsNext,
-            board: initialState.board
-            }
-    }
-
-    
+        ...state,
+        xIsNext: initialState.xIsNext,
+        board: initialState.board
+        }
+    }    
     
     return state;
 }
