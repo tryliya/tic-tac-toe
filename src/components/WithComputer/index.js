@@ -66,7 +66,7 @@ function GameWithComputer() {
         )
     }
 
-    let winnerName = (winner) => winner === 'X' ? 'computer' : user.name.first;
+    let winnerName = (winner) => winner === 'X' ? 'computer' : user.name;
 
     const randomMove = (board) => {
         onChangexIsNext(!xIsNext)
@@ -103,7 +103,7 @@ function GameWithComputer() {
 
     const maybeToe = () => {
         if (getEmptySquares(board).length > 0) {
-            return 'It is '  +  ( xIsNext ? 'computer' : user.name.first)  +  ' turn'
+            return 'It is '  +  ( xIsNext ? 'computer' : user.name)  +  ' turn'
         } else {
             return 'It is toe'
         }

@@ -1,0 +1,104 @@
+
+  \{^_^}/ hi!
+
+  Loading db.json
+  Loading ./node_modules/json-server-auth
+  Loading npm
+Error: Cannot find module '/home/o_aduev/Desktop/react/tic-tac-toe/backend/npm'
+Require stack:
+- /home/o_aduev/Desktop/react/tic-tac-toe/backend/node_modules/json-server/lib/cli/run.js
+- /home/o_aduev/Desktop/react/tic-tac-toe/backend/node_modules/json-server/lib/cli/index.js
+- /home/o_aduev/Desktop/react/tic-tac-toe/backend/node_modules/json-server/lib/cli/bin.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at /home/o_aduev/Desktop/react/tic-tac-toe/backend/node_modules/json-server/lib/cli/run.js:127:18
+    at Array.map (<anonymous>)
+    at /home/o_aduev/Desktop/react/tic-tac-toe/backend/node_modules/json-server/lib/cli/run.js:125:40 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/o_aduev/Desktop/react/tic-tac-toe/backend/node_modules/json-server/lib/cli/run.js',
+    '/home/o_aduev/Desktop/react/tic-tac-toe/backend/node_modules/json-server/lib/cli/index.js',
+    '/home/o_aduev/Desktop/react/tic-tac-toe/backend/node_modules/json-server/lib/cli/bin.js'
+  ]
+}
+
+  \{^_^}/ hi!
+
+  Loading db.json
+  Loading ./node_modules/json-server-auth
+  Done
+
+  Resources
+  http://localhost:3001/users
+
+  Home
+  http://localhost:3001
+
+  Type s + enter at any time to create a snapshot of the database
+
+  \{^_^}/ hi!
+
+  Loading db.json
+  Loading ./node_modules/json-server-auth
+  Done
+
+  Resources
+  http://localhost:3001/users
+
+  Home
+  http://localhost:3001
+
+  Type s + enter at any time to create a snapshot of the database
+Some error occurred Error: listen EADDRINUSE: address already in use 127.0.0.1:3001
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 3001
+}
+
+  \{^_^}/ hi!
+
+  Loading db.json
+  Loading ./node_modules/json-server-auth
+  Done
+
+  Resources
+  http://localhost:3001/users
+
+  Home
+  http://localhost:3001
+
+  Type s + enter at any time to create a snapshot of the database
+
+  \{^_^}/ hi!
+
+  Loading db.json
+  Loading ./node_modules/json-server-auth
+  Done
+
+  Resources
+  http://localhost:3001/users
+
+  Home
+  http://localhost:3001
+
+  Type s + enter at any time to create a snapshot of the database
+Some error occurred Error: listen EADDRINUSE: address already in use 127.0.0.1:3001
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1503:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:8) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '127.0.0.1',
+  port: 3001
+}
+[0mPOST /signin [32m200[0m 126.479 ms - 285[0m

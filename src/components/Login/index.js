@@ -35,20 +35,12 @@ const onLogin = async () => {
       type: ACTION_TYPES.LOGIN_START
     })
     const user = await axios
-      .get(
-        `http://localhost:3001/users?email=${email}&password=${password}`,
+      .post(`http://localhost:3001/signin`,
         {
-          validateStatus: (status) => status >= 200 && status <= 304
-        }
-      )
-      .then(response => {
-        let found = response.data
-        if (found.length === 1) {
-          return found[0];
-        } else { 
-          throw new Error('Пользователь не найден');
-        }
-      } )
+          email: email,
+          password: password
+        })
+      .then(response => response.data.user)
       
     dispatch({
       type: ACTION_TYPES.LOGIN_SUCCESS,
@@ -66,7 +58,7 @@ const onLogin = async () => {
       <input type="text" value={email} placeholder="email" onChange={onChangeEmail}/>
       <input type="password" value={password} placeholder="password" onChange={onChangePassword}/>
       <button className="onLogin" onClick={onLogin}>Ready</button>
-      { user._id && <Redirect to="/withComputer"/> }
+      { user.id && <Redirect to="/withComputer"/> }
     </div>
   );
 }
